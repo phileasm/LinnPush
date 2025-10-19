@@ -1,0 +1,27 @@
+linnstrument-firmware.ino :
+- lines 200-201 : define ASSIGNED_PUSH_MODE 
+- line 490 moved MAX_ASSIGNED
+
+displaymodes.ino :
+- line 170 : paintCustomSwitchAssignmentConfigDisplay mod
+- lines 316-318 : else if for cellOn Switch1 and Switch2
+- lines 337-339 : adaptfont_draw_string(0, 0, "PUSH", globalColor, true)
+- lines 1186-1188 and 1528 : paintCustomSwitchAssignmentConfigDisplay and paintSwitchAssignement mods
+
+handletouches.ino :
+- lines 709-711 and 1639-1641 : handleNonPlayingTouch and handleNonPlayingRelease mods
+
+leds.ino :
+- lines 138-187 : getCombinedLedData mods
+
+midi.ino :
+- line 412 : changed "displayMode == displayNormal" with displayPushMode
+
+settings.ino :
+- lines 578-579 and 591 : defined switch assignements at boot & CC65 value (for convenience)
+- lines 3320-end : def handlePushMode() for handletouches
+
+switches.ino :
+- lines 68 and 72 : comment ASSIGNED_CC_65 and ASSIGNED_PUSH_MODE so they are non-stateful
+- lines 204-210 : added exception for ASSIGNED_PUSH_MODE and ASSIGNED_CC_65
+- lines 322-326 and 382 and 414-416 : performSwitchAssignmentOn and performSwitchAssignmentHoldOff and performSwitchAssignmentOff mods
