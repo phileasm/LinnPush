@@ -9,7 +9,9 @@ In order to implement it on your Linnstrument, we have to do 2 things : add bits
 4. Now let's create the Max for Live device : open Ableton Live, drag and drop a MIDI Max for Live device on a track and click on the editing button. This will launch Max for Live editor (may take some time, be patient).
 5. Once it's launched, create the following blocks and link them accordingly :
 
-6. Right click on your js block and paste the js file from this Github.
-7. Well done you made it !
+<img width="298" height="196" alt="LinnPushDevice" src="https://github.com/user-attachments/assets/409e414c-a5f6-4854-8d89-300ddc4bb331" />
+
+7. Right click on your js block and paste the LinnPushCode.js file from this Github and save it in the same folder as your MIDI Max for Live Device (Ableton>User Library>Presets>MIDI Effects>Max MIDI Effect)
+8. Well done you made it !
 
 Note : Max for Live is included by default in Live Suite and it is possible to buy it as an add-on module for Live Standard.
